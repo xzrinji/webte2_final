@@ -22,9 +22,9 @@ $daca = "Dragana";
 <div class="dropdwn">
     <nav>
         <ul>
-            <li><a href="#home" class="lang" key="home">Home</a></li>
-            <li><a href="#pendulum" class="lang" key="kyvadlo">Inverted pendulum</a></li>
-            <li><a href="ball-beam.php" class="lang" key="gulicka">Ball beam</a></li>
+            <li><a href="index.php" class="lang" key="home">Home</a></li>
+            <li><a href="inverted_pendulum.php" class="lang" key="kyvadlo">Inverted pendulum</a></li>
+            <li><a href="ball-beam" class="lang" key="gulicka">Ball beam</a></li>
             <li><a href="#suspension" class="lang" key="tlmic">Suspension</a></li>
             <li><a href="#aircraft" class="lang" key="lietadlo">Aircraft pitch</a></li>
             <li><a href="#contact" class="lang" key="contact">Contact<i class="fas fa-caret-down"></i> </a>
@@ -34,8 +34,8 @@ $daca = "Dragana";
                     <li><a href="#dragana" class="contact" id="Dragana">Dragana</a></li>
                 </ul>
             </li>
-            <li><a href="#eng" id="en" class="translate"> English <img src="english-flag.png" alt="english_flag"> </a></li>
-            <li><a href="#sk" id="sk" class="translate"> Slovak <img src="slovakia-flag.png" alt="slovak_flag"></a></li>
+            <li><a href="#eng" id="en" class="translate"> English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"> </a></li>
+            <li><a href="#sk" id="sk" class="translate"> Slovak <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a></li>
         </ul>
     </nav>
 </div>
