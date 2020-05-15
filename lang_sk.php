@@ -9,4 +9,6 @@ define("_SUBMIT", "Potvrdit");
 define("_HOME", "Domov");
 define("_CONTACTS","Kontakt");
 
+
+
 ?>

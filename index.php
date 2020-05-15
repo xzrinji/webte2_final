@@ -23,10 +23,9 @@ $daca = "Dragana";
     <nav>
         <ul>
             <li><a href="index.php" class="lang" key="home">Home</a></li>
-            <li><a href="inverted_pendulum.php" class="lang" key="kyvadlo">Inverted pendulum</a></li>
+            <li><a href="inverted_pendulum/inverted_pendulum.php" class="lang" key="kyvadlo">Inverted pendulum</a></li>
             <li><a href="ball-beam" class="lang" key="gulicka">Ball beam</a></li>
-            <li><a href="#suspension" class="lang" key="tlmic">Suspension</a></li>
-            <li><a href="#aircraft" class="lang" key="lietadlo">Aircraft pitch</a></li>
+            <li><a href="suspension/suspension.php" class="lang" key="tlmic">Suspension</a></li>
             <li><a href="#contact" class="lang" key="contact">Contact<i class="fas fa-caret-down"></i> </a>
                 <ul>
                     <li><a href="#vladimir" class="contact" id="Vladimir">Vladimir</a></li>

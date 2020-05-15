@@ -1,3 +1,6 @@
+<?php
+require_once ('../inverted_pendulum/functions.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +10,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-    <script src="ball_beam/simulation.js"></script>
+    <script src="ball_beam/animation.js"></script>
     <script src="ball_beam/grafy.js"></script>
     <script src="ball_beam/script.js"></script>
     
-    <title>Ball Beam</title>
+    <title><?php echo TITLE2; ?> </title>
 </head>
 <body>
-  <div class="fixed-top positoin-absolute"><a href="index.php" class="btn text-white"> <h1>←</h1> </a></div>
+
+
+  
+  <nav class="navbar navbar-light bg-dark">
+  <div><a href="index.php" class="btn text-white"> <h1>←</h1> </a></div>
+    <div>
+  <a href="?lan=en">&raquo; English</a>
+    <a href="?lan=sk">&raquo; Slovak</a>
+    </div>
+</nav>
+  
+
+  
 <div class="row bg-dark text-white" id="grafy">
     <div class="col h-25" id="graf1">
     <canvas  id="myChart"></canvas>
@@ -27,25 +42,25 @@
 </div>
 
 <div class="row bg-dark text-white" id="bottom">
-
+   
     <div class="col-lg input p-5">
     <form id="api-call-form">
   <div class="form-group">
-    <label for="pozicia">Pozícia loptičky</label>
-    <input type="number" step="0.01" class="form-control w-25" id="pozicia" aria-describedby="poziciaTip" name="pozicia" placeholder="0.0-0.95">
-    <small id="poziciaTip" class="form-text text-danger invisible">Zadaný vstup nie je platný, vstup musi byť 0-0.95</small>
+    <label for="pozicia"><?php echo POSITION; ?> </label>
+    <input type="number" step="0.01" class="form-control w-25" id="pozicia" aria-describedby="poziciaTip" name="pozicia" placeholder="0.0-1.0">
+    <small id="poziciaTip" class="form-text text-danger invisible"><?php echo ALERT; ?></small>
   </div>
   
   
-  <button type="submit" class="btn btn-primary">Odoslať</button>
+  <button type="submit" class="btn btn-primary"><?php echo SEND; ?></button>
 </form>
 <div class="form-check  mt-5">
     <input type="checkbox" class="form-check-input" id="graph" checked>
-    <label class="form-check-label" for="graph">Graf</label>
+    <label class="form-check-label" for="graph"><?php echo GRAPH; ?></label>
   </div>
   <div class="form-check">
     <input type="checkbox" class="form-check-input" id="animation" checked>
-    <label class="form-check-label" for="animation">Animácia</label>
+    <label class="form-check-label" for="animation"><?php echo SIMULATION; ?></label>
   </div>
     </div>
     <div class="col canvas" id="canvas-div"></div>

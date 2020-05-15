@@ -1,5 +1,3 @@
-
-
 $(function(){
     $(".contact").click(function(e){
         console.log(e.target.id);
@@ -44,6 +42,9 @@ arrLang['en']['kyvadlo'] = 'Inverted pendulum';
 arrLang['en']['gulicka'] = 'Ball beam';
 arrLang['en']['tlmic'] = 'Suspension';
 arrLang['en']['lietadlo'] = 'Aircraft pitch';
+
+
+
 // Slovak content
 arrLang['sk']['home'] = 'Domov';
 arrLang['sk']['contact'] = 'Kontakt';
@@ -51,6 +52,7 @@ arrLang['sk']['kyvadlo'] = 'Inverzne kyvadlo';
 arrLang['sk']['gulicka'] = 'Gulicka na tyci';
 arrLang['sk']['tlmic'] = 'Tlmic automobil';
 arrLang['sk']['lietadlo'] = 'Naklon lietadla';
+
 
 
 // Process translation

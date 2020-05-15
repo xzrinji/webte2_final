@@ -43,7 +43,7 @@ $(function () {
         e.preventDefault();
         e.stopPropagation(); // only neccessary if something above is listening to the (default-)event too
 
-        if(parseFloat($("#pozicia").val()) >= 0 && (parseFloat($("#pozicia").val()) <= 0.95)) {
+        if(parseFloat($("#pozicia").val()) >= 0 && (parseFloat($("#pozicia").val()) <= 1)) {
             
             $( "#poziciaTip" ).addClass( "invisible" );
             var data = $(this).serializeArray();
