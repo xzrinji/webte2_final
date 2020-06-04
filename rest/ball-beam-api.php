@@ -1,5 +1,7 @@
 <?php
+
  require "../vendor/autoload.php";
+ include("../config.php");
  error_reporting(E_ERROR | E_PARSE);
 
 
@@ -74,10 +76,18 @@ $result["y"]= array_map('floatval',explode("\n", $octave->query("N*x(:,1)")));
 $result["x"]= array_map('floatval',explode("\n", $octave->query("x(:,3)")));
 $result["t"]= array_map('floatval',explode("\n", $octave->query("t")));
 
+$json = json_encode($result);
+$sql = "INSERT INTO `informations`(`id_author`,`requested_api`, `sent_vars`, `info`, `error`) VALUES (1, 'ball-beam-api','{$nova_pozicia}', 'success', NULL)";
 
+
+if ($conn->query($sql) === TRUE) {
+    echo json_encode($result);
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
 //echo "<pre>";
 //var_dump($result["x"]);
 //echo "</pre>";
-echo json_encode($result);
+//echo json_encode($result);
 
 ?>

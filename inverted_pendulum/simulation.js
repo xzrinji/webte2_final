@@ -4,7 +4,8 @@ var nextTimer =0;
 var whichFrame = 0;
 var delay = 10;
 function setup() {
-  createCanvas(400, 400);
+  let canvasco = createCanvas(400, 400);
+  canvasco.parent("simulation")
   dlzka = 500;
   vozik_dlzka = 150;
   vozik_vyska = 50;

@@ -43,7 +43,7 @@ function graphs() {
                 yAxisID: 'A', //
                 data: y,
             }, {
-                label: 'To druhvo',
+                label: 'Uhol vychylenia v radianoch',
                 yAxisID: 'B', //
                 data: a,
             }]

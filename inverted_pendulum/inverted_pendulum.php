@@ -20,19 +20,26 @@ require_once ('functions.php');
     <script src="graph.js"></script>
     <title><?php echo TITLE1; ?> </title>
 
-    <script>
-        function update(){
-            var checkbox = $(this);
-            var name = checkbox.data('name');
-            if( checkbox.is(':checked') ) {
-                $( '#' + name ).show();
-            } else {
-                $( '#' + name ).hide();
-            }
+    <style>
+        .box{
+            color: #fff;
+            padding: 20px;
+            display: none;
+            margin-top: 20px;
         }
-
-        //just setup change and each to use the same function
-        $('.show_hide').change(update).each(update);
+        .red{ background: #ff0000; }
+        .green{ background: #228B22; }
+        .blue{ background: #0000ff; }
+        label{ margin-right: 15px; }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('input[type="checkbox"]').click(function(){
+                var inputValue = $(this).attr("value");
+                $("." + inputValue).toggle();
+            });
+        });
     </script>
 
 </head>
@@ -46,8 +53,10 @@ require_once ('functions.php');
 
 <div>
     <label > <?php echo DESCRIPTION; ?>  </label> <br>
-    <input class="show_hide" value="Graph" type="checkbox" name="checkbox" checked/> <?php echo GRAPH; ?> <br>
-    <input class="show_hide" value="Simulation" type="checkbox" name="checkbox" checked />  <?php echo SIMULATION; ?> <br>
+
+    <label><input type="checkbox" name="Checkbox" value="graph" checked><?php echo GRAPH; ?>  </label>
+    <label><input type="checkbox" name="Checkbox" value="simulation" checked> <?php echo SIMULATION; ?> </label>
+
 </div>
 
 <!-- Graph  -->
@@ -61,14 +70,14 @@ require_once ('functions.php');
 
     <button type="submit" class="btn btn-primary"><?php echo SEND; ?></button>
 </form>
-<div id="graph" style="width: 800px; height: 800px;">
+<div class="graph" style="width: 800px; height: 800px;">
     <canvas id="myChart"></canvas>
     <canvas id="myChart2"></canvas>
 </div>
 
 
 <!--  Simulation   -->
-<div id="simulation">
+<div class="simulation" id="simulation">
 
     <script type="text/javascript" src="simulation.js"></script>
 

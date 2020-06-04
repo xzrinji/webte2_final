@@ -59,10 +59,14 @@ $result["M2"]= array_map('floatval',explode("\n", $octave->query("x(:,1)")));
 $result["M1"]= array_map('floatval',explode("\n", $octave->query("x(:,3)")));
 $result["t"]= array_map('floatval',explode("\n", $octave->query("t")));
 
-/*
-echo "<pre>";
-var_dump($result["x"]);
-echo "</pre>";
-*/
-echo json_encode($result);
+
+$sql = "INSERT INTO `informations`(`id_author`,`requested_api`, `sent_vars`, `info`, `error`) VALUES (1, 'suspension-api','{$nova_pozicia}', 'success', NULL)";
+
+
+if ($conn->query($sql) === TRUE) {
+    echo json_encode($result);
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
+
 ?>
