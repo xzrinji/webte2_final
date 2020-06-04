@@ -1,5 +1,6 @@
 <?php
 require "../vendor/autoload.php";
+include("../config.php");
 error_reporting(E_ERROR | E_PARSE);
 
 
