@@ -12,11 +12,28 @@ require_once ('functions.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="../style.css">
     <script src="graph.js"></script>
     <title><?php echo TITLE1; ?> </title>
+
+    <script>
+        function update(){
+            var checkbox = $(this);
+            var name = checkbox.data('name');
+            if( checkbox.is(':checked') ) {
+                $( '#' + name ).show();
+            } else {
+                $( '#' + name ).hide();
+            }
+        }
+
+        //just setup change and each to use the same function
+        $('.show_hide').change(update).each(update);
+    </script>
 
 </head>
 <body>
@@ -26,39 +43,35 @@ require_once ('functions.php');
 
 <div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php" class="btn text-white"> <h1>←</h1> </a></div>
 
+
 <div>
     <label > <?php echo DESCRIPTION; ?>  </label> <br>
-    <input class="show_hide" value="Graph" type="checkbox" data-name="graph" checked/> <?php echo GRAPH; ?> <br>
-    <input class="show_hide" value="Simulation" type="checkbox" data-name="simulation" checked />  <?php echo SIMULATION; ?> <br>
+    <input class="show_hide" value="Graph" type="checkbox" name="checkbox" checked/> <?php echo GRAPH; ?> <br>
+    <input class="show_hide" value="Simulation" type="checkbox" name="checkbox" checked />  <?php echo SIMULATION; ?> <br>
 </div>
 
 <!-- Graph  -->
+
+<form id="api-call-form">
+    <div class="form-group">
+        <label for="pozicia"> Choose :  </label>
+        <input type="number" step="0.01" class="form-control w-25" id="pozicia" aria-describedby="poziciaTip" name="pozicia" placeholder="0.0-1.0">
+        <small id="poziciaTip" class="form-text text-danger invisible"><?php echo ALERT; ?></small>
+    </div>
+
+    <button type="submit" class="btn btn-primary"><?php echo SEND; ?></button>
+</form>
 <div id="graph" style="width: 800px; height: 800px;">
     <canvas id="myChart"></canvas>
     <canvas id="myChart2"></canvas>
 </div>
 
 
-
 <!--  Simulation   -->
 <div id="simulation">
-    <!--hidden element to store the values for animation--------------->
-    <input type="hidden" id="h" value="0" />
-    <canvas id="Canvas_One" width="400" height="300" style="border:2px solid red;" class="imgforcontent">
-    </canvas>
-    <!----radio buttons for speed control---------------------------->
-    <form name="pendulum" action="">
-        <input id="R1" name="speed" value="Slow" type="radio" />Slow<br /><br />
-        <input id="R2" name="speed" value="Medium" type="radio" />Medium<br /><br />
-        <input id="R3" name="speed" value="Fast" type="radio" />Fast<br /><br />
-    </form>
-    <!---------------buttons to start and stop the animation------------------------>
-    <div style="width:400px;">
-        <input type="button" style="float:left;margin-left:10px;" value="Run" onclick="anim()" id="Animation" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="button" style="float:right;margin-right:10px;" value="Stop" onclick="window.clearInterval(x)" id="Stopping" >
-    </div>
-</div>
+
     <script type="text/javascript" src="simulation.js"></script>
 
+</div>
 </body>
 </html>

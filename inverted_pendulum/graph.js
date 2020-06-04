@@ -12,7 +12,11 @@ function graphs() {
                 yAxisID: 'A', //
                 data: y,
             }, {
+<<<<<<< HEAD
                 label: 'To druhvo',
+=======
+                label: 'Uhol vychýlenia v radianoch',
+>>>>>>> f8cdbae8a8a38621e336351a5281543be34a204b
                 yAxisID: 'B', //
                 data: a,
             }]

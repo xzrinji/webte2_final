@@ -24,10 +24,9 @@ $octave->run("D = [0; 0];");
 $octave->run("K = lqr(A,B,C'*C,1);");
 $octave->run("Ac = [(A-B*K)];");
 $octave->run("N = -inv(C(1,:)*inv(A-B*K)*B);");
-
 $octave->run("sys = ss(Ac,B*N,C,D);");
-
 $octave->run("t = 0:0.05:10;");
+
 $octave->run("r =0.2;");
 $octave->run("initPozicia=0;");
 $octave->run("initUhol=0;");
@@ -35,29 +34,14 @@ $octave->run("[y,t,x]=lsim(sys,r*ones(size(t)),t,[initPozicia;0;initUhol;0]);");
 $octave->run("plot(t,y)");
 
 
-/*
-echo "<pre>";
-print_r($octave->query("plot(t,y)"));
-echo "</pre>";
-*/
-
 $octave->run("r=0.5;");
 $octave->run("[y,t,x]=lsim(sys,r*ones(size(t)),t,x(size(x,1),:));");
 $octave->run("plot(t,y)");
-/*
-echo "<pre>";
-print_r($octave->query("plot(t,y)"));
-echo "</pre>";
-*/
+
 
 $result["y"]= array_map('floatval',explode("\n", $octave->query("x(:,1)")));
 $result["x"]= array_map('floatval',explode("\n", $octave->query("x(:,3)")));
 $result["t"]= array_map('floatval',explode("\n", $octave->query("t")));
 
-/*
-echo "<pre>";
-var_dump($result["x"]);
-echo "</pre>";
-*/
 echo json_encode($result);
 ?>

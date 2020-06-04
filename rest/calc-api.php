@@ -3,12 +3,12 @@
  error_reporting(E_ERROR | E_PARSE);
 $octave=new Octave(false);
 
-$input = $_GET["input"];
-print_r($_GET);
+$input = $_GET["vstup"];
+//print_r($_GET);
 $result["ans"] = $octave->query($input);
-echo "\n";
-print_r($result);
+//echo "\n";
+//print_r($result);
 
-//echo json_encode($result);
+echo json_encode($result);
 
 ?>
