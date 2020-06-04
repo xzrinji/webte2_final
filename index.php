@@ -1,4 +1,4 @@
-f8cdbae8a8a38621e336351a5281543be34a204b<?php
+<?php
 
 include "config.php";
 
