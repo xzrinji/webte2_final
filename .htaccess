@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^ball-beam?([0-9a-zA-Z_-]*)$ ball_beam/ball-beam.php [QSA,L]
+RewriteRule ^calc?([0-9a-zA-Z_-]*)$ vypocet/vypocet.php [QSA,L]
+
