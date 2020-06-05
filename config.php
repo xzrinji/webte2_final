@@ -1,6 +1,6 @@
 <?php
 
-//password - finalne_zadanie
+//API KEY stored in password.txt document.
 
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */

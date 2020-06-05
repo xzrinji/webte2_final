@@ -4,3 +4,4 @@ RewriteRule ^api/get/names?([0-9a-zA-Z_-]*)$ api.php?search=name&$1 [QSA,L]
 RewriteRule ^api/get/ball-beam?([0-9a-zA-Z_-]*)$ ball-beam-api.php [QSA,L]
 RewriteRule ^api/get/calc?([0-9a-zA-Z_-]*)$ calc-api.php [QSA,L]
 
+

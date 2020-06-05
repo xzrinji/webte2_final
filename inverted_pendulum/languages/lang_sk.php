@@ -29,4 +29,10 @@ define('COUNT','Vypocet');
 define('FORMULAR', 'Formular na vypocet');
 define('INPUT', 'Vstup');
 define('OUTPUT','Vystup');
+
+
+//welcome.php
+
+define('INFO_API','Ak chcete získať prístup na našu stránku, zadajte do adresy URL platny API kľúč..');
+define('ERROR','Chybný API kluc, zadajte platny.');
 ?>
