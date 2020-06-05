@@ -9,10 +9,12 @@ function graphs() {
             labels: t,
             datasets: [{
                 label: 'V čase meniaca sa pozícia kyvadla',
+                borderColor: 'rgb(0,0,255)',
                 yAxisID: 'A', //
                 data: y,
             }, {
                 label: 'Uhol vychýlenia v radianoch',
+                borderColor: 'rgb(255,140,0)',
                 yAxisID: 'B', //
                 data: a,
             }]
@@ -41,10 +43,12 @@ function graphs() {
             datasets: [{
                 label: 'V čase meniaca sa pozícia kyvadla',
                 yAxisID: 'A', //
+                borderColor: 'rgb(0,0,255)',
                 data: y,
             }, {
                 label: 'Uhol vychylenia v radianoch',
                 yAxisID: 'B', //
+                borderColor: 'rgb(255,140,0)',
                 data: a,
             }]
         },

@@ -16,8 +16,10 @@ require_once ('functions.php');
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
     <script src="script.js"></script>
+    <script type="text/javascript" src="simulation.js"></script>
     <link rel="stylesheet" href="../style.css">
     <script src="graph.js"></script>
+
     <title><?php echo TITLE1; ?> </title>
 
     <style>
@@ -32,7 +34,6 @@ require_once ('functions.php');
         .blue{ background: #0000ff; }
         label{ margin-right: 15px; }
     </style>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
         $(document).ready(function(){
             $('input[type="checkbox"]').click(function(){
@@ -44,8 +45,8 @@ require_once ('functions.php');
 
 </head>
 <body>
-<a href="?lan=en">&raquo; English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a>
-<a href="?lan=sk">&raquo; Slovak  <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a>
+<a href="?lan=en">&raquo; English </a>
+<a href="?lan=sk">&raquo; Slovak  </a>
 
 
 <div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php" class="btn text-white"> <h1>←</h1> </a></div>
@@ -79,8 +80,9 @@ require_once ('functions.php');
 <!--  Simulation   -->
 <div class="simulation" id="simulation">
 
-    <script type="text/javascript" src="simulation.js"></script>
 
 </div>
-</body>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body></body>
 </html>

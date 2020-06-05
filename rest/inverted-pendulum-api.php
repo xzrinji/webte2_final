@@ -28,16 +28,16 @@ $octave->run("N = -inv(C(1,:)*inv(A-B*K)*B);");
 $octave->run("sys = ss(Ac,B*N,C,D);");
 $octave->run("t = 0:0.05:10;");
 
-$octave->run("r =0.2;");
+$octave->run("r =". $pozicia.";");
 $octave->run("initPozicia=0;");
 $octave->run("initUhol=0;");
 $octave->run("[y,t,x]=lsim(sys,r*ones(size(t)),t,[initPozicia;0;initUhol;0]);");
-$octave->run("plot(t,y)");
+//$octave->run("plot(t,y)");
 
 
-$octave->run("r=0.5;");
+$octave->run("r =". $nova_pozicia.";");
 $octave->run("[y,t,x]=lsim(sys,r*ones(size(t)),t,x(size(x,1),:));");
-$octave->run("plot(t,y)");
+//$octave->run("plot(t,y)");
 
 
 $result["y"]= array_map('floatval',explode("\n", $octave->query("x(:,1)")));
