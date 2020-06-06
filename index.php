@@ -13,7 +13,9 @@ require_once ('inverted_pendulum/functions.php');
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
     <script src="script.js"></script>
 
 </head>
@@ -58,22 +60,77 @@ require_once ('inverted_pendulum/functions.php');
         <div class="project"></div>
     </div>
 
-    <div class="about">
+    <div class="jumbotron container mt-4">
+  <h1 class="display-4">Computer Aided System API</h1>
+  <p class="lead"><?php echo WELCOME; ?></p>
+  <hr class="my-4">
+  
+</div>
 
-        <p> <?php echo WELCOME; ?>
+    <div class="about container">
 
-        <h4> <?php echo TITLE1; ?></h4>
-        <p>  <?php echo DESCRIPTION_INVERTED; ?></p>
-        <h4> <?php  echo TITLE2; ?></h4>
-        <p>  <?php echo DESCRIPTION_BALL; ?></p>
-        <h4> <?php echo TITLE3; ?></h4>
-        <p>  <?php echo DESCRIPTION_SUSPENSION; ?></p>
 
+        <p
+
+        <div class="row">
+        <div class="container">
+        <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Cart-pendulum.svg/300px-Cart-pendulum.svg.png" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><?php echo TITLE1; ?></h5>
+        <p class="card-text"><?php echo DESCRIPTION_INVERTED; ?></p>
+        
+      </div>
+    </div>
+  </div>
+
+        </div>
+        
+        <div class="container">
+        <div class="row no-gutters">
+    
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><?php  echo TITLE2; ?></h5>
+        <p class="card-text"><?php echo DESCRIPTION_BALL; ?></p>
+        
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="https://lh3.googleusercontent.com/proxy/UMBxceC-ofh3YmFTeAQ5mS05s5Qg8RpTmq6OTm6WmR3rWkI9bHfXZ4SaNRPqQzb09tc_ohWHWGEORVOQ8drc0shbePYM48uewRb_sa0hfs5KoPsz2HtujdB-QgP7HwCCo8y32-iuX1c1" class="card-img" alt="...">
+    </div>
+  </div>
+
+        </div>
+
+        <div class="container">
+        <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://ctms.engin.umich.edu/CTMS/Content/Suspension/System/Modeling/figures/susp1.png" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><?php echo TITLE3; ?></h5>
+        <p class="card-text"><?php echo DESCRIPTION_SUSPENSION; ?></p>
+        
+      </div>
+    </div>
+  </div>
+
+        </div>
+
+      
     </div>
 
-
+    </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>
 

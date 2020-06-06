@@ -44,9 +44,14 @@ define('API_KEY','API Key');
 define('INDIVIDUAL','Individual work');
 define('LOGGING','Logging');
 define('DESC_API','API description');
-define('STATISTICS','Statistic');
+define('STATISTICS','Statistics');
 define('MATHEMATICS','Mathematics');
 
 define('DRAGANA', 'In these graphs you can follow the change in the position of the inverted pendulum. The blue line indicates the change of position over time, and the orange line change of the angle.I processed the data using Octave. The values ​​in the graph as well as the position and angle can be changed by selecting a number in the range 0 - 1, during which the graph will be drawn with new values ​​and the animation will start with these values.');
+define('ZELKO','My project was Ball Beam. The first graph shows the changing position of the ball over time and the second graph shows the angle of inclination of the rod as a function of time. The animation itself depends on both the parameters obtained from Octave and the entered parameters from the user. When the user enters a parameter in the range 0-1, the animation starts, and the values ​​on the graph also change based on the new data.');
 
+//stat.php
+define('EMAIL','Please enter Your e-mail if You want to recieve page statistics.');
+define('PROJECT', 'Task');
+define('COUNTER','Number of uses');
 ?>

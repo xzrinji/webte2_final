@@ -17,7 +17,7 @@ require_once ('../inverted_pendulum/functions.php');
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
-    <title>Štatistika</title>
+    <title><?php echo STATISTICS?></title>
 </head>
 <body>
 
@@ -32,7 +32,7 @@ require_once ('../inverted_pendulum/functions.php');
             <li><a href="#math" class="lang" > <?php echo MATHEMATICS; ?> <i class="fas fa-caret-down"></i> </a>
                 <ul>
                     <li><a href="calc" class="lang"> <?php echo COUNT; ?> </a></li>
-                    <li><a href="stats/stats.php" class="lang"> Statistics</a></li>
+                    <li><a href="stats/stats.php" class="lang"> <?php echo STATISTICS?></a></li>
                 </ul>
             </li>
             <li><a href="#contact" class="lang" > <?php echo CONTACT; ?> <i class="fas fa-caret-down"></i> </a>
@@ -80,8 +80,8 @@ while ($row = $result->fetch_assoc()) {
     <table class="table table-hover" id="table-stats">
   <thead>
     <tr>
-      <th scope="col">Úloha</th>
-      <th scope="col">Počet užívaní</th>
+      <th scope="col"><?php echo PROJECT;?></th>
+      <th scope="col"><?php echo COUNTER?></th>
       
     </tr>
   </thead>
@@ -103,19 +103,15 @@ while ($row = $result->fetch_assoc()) {
 </table>
 
         <form action="" method="POST" id="form-mail">
-            <label>Enter Your E-mail Please If You Want To Recieve Page Statistics</label><br>
-            <input type="email"name="email_entered" value='<?php echo $email; ?>'/>
+            <label><?php echo EMAIL;?></label><br>
+            <input type="email"name="email_entered" value='email'/>
             <br><br>
-            <input type="submit" name="submitbutton" value="Submit" class="btn btn-primary"/>
+            <input type="submit" name="submitbutton" value="<?php echo SEND;?>" class="btn btn-primary"/>
         </form>
 
 
      
     </div>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

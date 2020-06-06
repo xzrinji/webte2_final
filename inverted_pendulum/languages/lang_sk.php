@@ -50,6 +50,10 @@ define('STATISTICS','Štatistika');
 define('MATHEMATICS','Matematika');
 
 define('DRAGANA','V týchto grafoch môžete sledovať zmenu polohy obráteného kyvadla. Modrá čiara označuje zmenu polohy v priebehu času a oranžová čiara zmenu uhla.Údaje som spracovala pomocou Octave. Hodnoty v grafe, ako aj polohu a uhol je možné meniť výberom čísla v rozsahu 0 - 1, počas ktorého bude graf nakreslený s novými hodnotami a animácia sa nastartuje týmito hodnotami.');
+define('ZELKO','Môj projekt bol Ball Beam. Prvý graf ukazuje v čase meniacu sa pozíciu guličky a druhy graf ukazuje uhol naklonenia tyče v závislosti od času. Animacia ako sama, zavisi ako od parametrov ziskanich z Octave, tak aj zadanych parametrov od uzivatela. Ked uzivatel zada parameter v rozsahu 0-1, tak sa animacia rozbehne, a hodnoty na grafe sa tiez zmenia na zaklade novych udajov.');
+//stats.php
 
-
+define('EMAIL', 'Ak chcete získať štatistiku, zadajte svoj e-mail.');
+define('PROJECT', 'Úloha');
+define('COUNTER','Počet užívaní');
 ?>

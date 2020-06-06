@@ -112,6 +112,7 @@ require_once ("inverted_pendulum/functions.php");
     <div class="column" style="background-color:#ccc;">
 
         <h3><?php echo TITLE2?></h3>
+        <p> <?php echo ZELKO ?></p>
 
     </div>
     <div class="column" style="background-color:#bbb;">
