@@ -35,4 +35,21 @@ define('OUTPUT','Vystup');
 
 define('INFO_API','Ak chcete získať prístup na našu stránku, zadajte do adresy URL platny API kľúč..');
 define('ERROR','Chybný API kluc, zadajte platny.');
+
+//work.php
+
+define('TITLE5','Popis API');
+define('TITLE4','Praca');
+define('BILING','Dvojjazycnost');
+define('API','API ku naistalovanemu CAS');
+define('API_KEY','API kluc');
+define('INDIVIDUAL','Individualna praca');
+define('LOGGING','Logovanie');
+define('DESC_API','Popis Api');
+define('STATISTICS','Štatistika');
+define('MATHEMATICS','Matematika');
+
+define('DRAGANA','V týchto grafoch môžete sledovať zmenu polohy obráteného kyvadla. Modrá čiara označuje zmenu polohy v priebehu času a oranžová čiara zmenu uhla.Údaje som spracovala pomocou Octave. Hodnoty v grafe, ako aj polohu a uhol je možné meniť výberom čísla v rozsahu 0 - 1, počas ktorého bude graf nakreslený s novými hodnotami a animácia sa nastartuje týmito hodnotami.');
+
+
 ?>

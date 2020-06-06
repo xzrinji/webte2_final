@@ -34,4 +34,19 @@ define('DESCRIPTION_SUSPENSION',' The job of a car suspension is to maximize the
 define('INFO_API','To get access to our page please enter valid api key into page URL.');
 define('ERROR','Bad API KEY, please enter valid one.');
 
+//work.php
+
+define('TITLE5','Description of the API');
+define('TITLE4','Work');
+define('BILING','Bilingualism');
+define('API','API for the installed CAS');
+define('API_KEY','API Key');
+define('INDIVIDUAL','Individual work');
+define('LOGGING','Logging');
+define('DESC_API','API description');
+define('STATISTICS','Statistic');
+define('MATHEMATICS','Mathematics');
+
+define('DRAGANA', 'In these graphs you can follow the change in the position of the inverted pendulum. The blue line indicates the change of position over time, and the orange line change of the angle.I processed the data using Octave. The values ​​in the graph as well as the position and angle can be changed by selecting a number in the range 0 - 1, during which the graph will be drawn with new values ​​and the animation will start with these values.');
+
 ?>

@@ -26,12 +26,19 @@ require_once ('inverted_pendulum/functions.php');
             <li><a href="inverted_pendulum/inverted_pendulum.php" class="lang" > <?php echo TITLE1; ?> </a></li>
             <li><a href="ball-beam" class="lang" > <?php echo TITLE2; ?> </a></li>
             <li><a href="suspension/suspension.php" class="lang" > <?php echo TITLE3; ?> </a></li>
-            <li><a href="calc" class="lang"> <?php echo COUNT; ?> </a></li>
+
+            <li><a href="#contact" class="lang" > <?php echo MATHEMATICS; ?> <i class="fas fa-caret-down"></i> </a>
+                <ul>
+                    <li><a href="calc" class="lang"> <?php echo COUNT; ?> </a></li>
+                    <li><a href="stats/stats.php" class="lang"> Statistics</a></li>
+                </ul>
+            </li>
             <li><a href="#contact" class="lang" > <?php echo CONTACT; ?> <i class="fas fa-caret-down"></i> </a>
                 <ul>
                     <li><a href="#vladimir" class="contact" id="Vladimir">Vladimir</a></li>
                     <li><a href="#zelko" class="contact" id="Zelko">Zelko</a></li>
                     <li><a href="#dragana" class="contact" id="Dragana">Dragana</a></li>
+                    <li><a href="work.php" class="contact" id="work">Work</a> </li>
                 </ul>
             </li>
             <li><a href="?lan=en">English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a></li>
@@ -39,7 +46,10 @@ require_once ('inverted_pendulum/functions.php');
         </ul>
     </nav>
 </div>
-<div class="body">
+<div class="background">
+
+    <div class="body" style="position: center ; margin-bottom: 5%;">
+
 
     <div class="contact-info">
         <div class="firstname"></div>
@@ -62,7 +72,7 @@ require_once ('inverted_pendulum/functions.php');
     </div>
 
 
-
+    </div>
 </div>
 </body>
 </html>

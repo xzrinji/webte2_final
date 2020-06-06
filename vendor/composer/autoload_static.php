@@ -10,6 +10,20 @@ class ComposerStaticInit85885682822c42eab9c9b3c1e1d6d092
         '8e24dc5057782f8745e34da993cac6d6' => __DIR__ . '/..' . '/gutza/octave-daemon/include/Octave_constants.php',
     );
 
+    public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+    );
+
     public static $classMap = array (
         'Octave' => __DIR__ . '/..' . '/gutza/octave-daemon/include/classes/Octave.php',
         'Octave_IP_processor' => __DIR__ . '/..' . '/gutza/octave-daemon/include/classes/Octave_IP_processor.php',
@@ -30,6 +44,8 @@ class ComposerStaticInit85885682822c42eab9c9b3c1e1d6d092
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit85885682822c42eab9c9b3c1e1d6d092::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit85885682822c42eab9c9b3c1e1d6d092::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit85885682822c42eab9c9b3c1e1d6d092::$classMap;
 
         }, null, ClassLoader::class);
