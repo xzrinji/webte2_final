@@ -2,8 +2,8 @@
 
 include "config.php";
 
-require_once ('inverted_pendulum/functions.php');
 
+require_once ('inverted_pendulum/functions.php');
 
 ?>
 <!DOCTYPE html>
@@ -27,7 +27,12 @@ require_once ('inverted_pendulum/functions.php');
             <li><a href="#" class="lang" > <?php echo TITLE1; ?> </a></li>
             <li><a href="#" class="lang" > <?php echo TITLE2; ?> </a></li>
             <li><a href="#" class="lang" > <?php echo TITLE3; ?> </a></li>
-            <li><a href="#" class="lang"> <?php echo COUNT; ?> </a></li>
+            <li><a href="#contact" class="lang" > <?php echo MATHEMATICS; ?> <i class="fas fa-caret-down"></i> </a>
+                <ul>
+                    <li><a href="#" class="lang"> <?php echo COUNT; ?> </a></li>
+                    <li><a href="#" class="lang"> Statistics</a></li>
+                </ul>
+            </li>
             <li><a href="#contact" class="lang" > <?php echo CONTACT; ?> <i class="fas fa-caret-down"></i> </a>
                 <ul>
                     <li><a href="#vladimir" class="contact" id="Vladimir">Vladimir</a></li>
@@ -49,30 +54,70 @@ require_once ('inverted_pendulum/functions.php');
         <div class="project"></div>
     </div>
 -->
-    <div class="about" style="height: 100px;">
+    <div class="about" style="height: 400px; margin-top: 10%;">
 
         <h3> <?php echo INFO_API;?> </h3>
-
+        <br>
+        <p> <?php echo HOWTO1 ;?></p>
+        <br>
+        <p> <?php echo HOWTO2 ;?></p>
+        <br>
+        <p> <?php echo HOWTO3 ;?></p>
+        <p> <?php echo HOWTO4 ;?></p>
+        <br>
         <?php
 
-        //echo "API KEY : ".$_GET['API_KEY'];
+        $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ?
+                "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .
+            $_SERVER['REQUEST_URI'];
 
-        $filename = 'password.txt';
-        $handle = fopen($filename,'r');
-        $file_password = fread($handle,filesize($filename));
+        //echo $url;
+
+        $query = parse_url($url);
 
 
-        //echo "TEXT FILE : ".$file_password;
-
-        if($_GET['API_KEY'] == $file_password)
+        if(isset($query['query']))
         {
-            header("Location: index.php");
+            parse_url($query['query'],$params);
+
+            if($query['query'] == 'API_KEY=f531aa0a174a5af8025a186bbe0e568e'){
+                echo "   Ok. Please refresh page.";
+                $cookie_name= "API_KEY";
+                $cookie_value = 'f531aa0a174a5af8025a186bbe0e568e';
+                setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+                if(!isset($_COOKIE[$cookie_name])) {
+                    echo "Cookie named '" . $cookie_name . "' is not set!";
+                } else {
+                    //echo "Cookie '" . $cookie_name . "' is set!<br>";
+                    //echo "Value is: " . $_COOKIE[$cookie_name];
+                    header("Location: index.php");
+                }
+                /*echo "<pre>";
+                var_dump($query['query']);
+                echo "</pre>";
+                */
+
+
+            }
+            else{
+                echo ERROR;
+            }
         }
         else{
-            echo "<h3>" .ERROR ."</h3>";
+            echo ERROR2;
+            $params = array();
         }
 
+        $params['API_KEY'] = 'f531aa0a174a5af8025a186bbe0e568e';
+
+        http_build_query($query);
+        /*
+        echo "<pre>";
+        var_dump($query);
+        echo "</pre>";
+        */
         ?>
+
 
     </div>
 

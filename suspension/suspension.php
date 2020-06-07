@@ -1,5 +1,7 @@
 <?php
 require_once ('../inverted_pendulum/functions.php');
+
+include "../api_key.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -19,7 +21,7 @@ require_once ('../inverted_pendulum/functions.php');
     <title><?php echo TITLE3; ?></title>
 </head>
 <body>
-<div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php"> <h1>←</h1> </a></div>
+<div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php?API_KEY=f531aa0a174a5af8025a186bbe0e568e"> <h1>←</h1> </a></div>
 
 <a href="?lan=en">&raquo; English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a>
 <a href="?lan=sk">&raquo; Slovak  <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a>

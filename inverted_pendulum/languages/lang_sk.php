@@ -5,6 +5,8 @@ Language: Slovak
 -----------------
 */
 
+define('MAIN','Finalne zadanie');
+
 define('DESCRIPTION','Ak chcete zobraziť alebo skryť graf alebo simuláciu,začiarknite alebo zrušte začiarknutie políčka ckeckbox');
 define('GRAPH', 'Graf');
 define('SIMULATION','Simulacia');
@@ -34,7 +36,12 @@ define('OUTPUT','Vystup');
 //welcome.php
 
 define('INFO_API','Ak chcete získať prístup na našu stránku, zadajte do adresy URL platny API kľúč..');
+define('HOWTO1', "Do adresy URL https://wt29.fei.stuba.sk:4429/finalne_zadanie/welcome.php zadajte kľúč API podľa tohto vzoru.");
+define('HOWTO2', 'Vzor: https://wt29.fei.stuba.sk:4429/finalne_zadanie/welcome.php?API_KEY= ZADAŤ_TU_API_KLUC');
+define('HOWTO3',"Kľúč má svoje vlastné skryté miesto. Mali by ste vedieť, kde to je.");
+define('HOWTO4', 'Po zadaní kľúča stránku dvakrát obnovte.');
 define('ERROR','Chybný API kluc, zadajte platny.');
+define('ERROR2','Nezadali ste API kluc. Prosim Vas zadajte API kluc');
 
 //work.php
 
@@ -56,4 +63,5 @@ define('ZELKO','Môj projekt bol Ball Beam. Prvý graf ukazuje v čase meniacu s
 define('EMAIL', 'Ak chcete získať štatistiku, zadajte svoj e-mail.');
 define('PROJECT', 'Úloha');
 define('COUNTER','Počet užívaní');
+define('TABLE','Táto tabuľka zobrazuje počet návštev / použití uvedených stránok / úloh.');
 ?>

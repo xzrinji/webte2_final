@@ -1,6 +1,8 @@
 <?php
 include "config.php";
 
+include "api_key.php";
+
 require_once ("inverted_pendulum/functions.php");
 
 ?>
@@ -49,16 +51,21 @@ require_once ("inverted_pendulum/functions.php");
     <nav>
         <ul>
             <li><a href="index.php" class="lang" > <?php echo HOME; ?>  </a></li>
-            <li><a href="inverted_pendulum/inverted_pendulum.php" class="lang" > <?php echo TITLE1; ?> </a></li>
+            <li><a href="/inverted_pendulum/inverted_pendulum.php" class="lang" > <?php echo TITLE1; ?> </a></li>
             <li><a href="ball-beam" class="lang" > <?php echo TITLE2; ?> </a></li>
-            <li><a href="suspension/suspension.php" class="lang" > <?php echo TITLE3; ?> </a></li>
-            <li><a href="calc" class="lang"> <?php echo COUNT; ?> </a></li>
+            <li><a href="/suspension/suspension.php" class="lang" > <?php echo TITLE3; ?> </a></li>
+            <li><a href="#contact" class="lang" > <?php echo MATHEMATICS; ?> <i class="fas fa-caret-down"></i> </a>
+                <ul>
+                    <li><a href="calc" class="lang"> <?php echo COUNT; ?> </a></li>
+                    <li><a href="stats/stats.php" class="lang"> <?php echo STATISTICS?></a></li>
+                </ul>
+            </li>
             <li><a href="#contact" class="lang" > <?php echo CONTACT; ?> <i class="fas fa-caret-down"></i> </a>
                 <ul>
                     <li><a href="#vladimir" class="contact" id="Vladimir">Vladimir</a></li>
                     <li><a href="#zelko" class="contact" id="Zelko">Zelko</a></li>
                     <li><a href="#dragana" class="contact" id="Dragana">Dragana</a></li>
-                    <li><a href="work.php" class="contact" id="work">Work</a> </li>
+                    <li><a href="/work.php" class="contact" id="work">Work</a> </li>
                 </ul>
             </li>
             <li><a href="?lan=en">English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a></li>

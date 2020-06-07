@@ -1,6 +1,7 @@
 <?php
 
-//API KEY stored in password.txt document.
+//API KEY = f531aa0a174a5af8025a186bbe0e568e
+
 
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
@@ -20,4 +21,12 @@ if($conn->connect_error){
 else{
     //echo " Connected to database.";
 }
+
+
+
+//API KEY
+
+
+
+
 ?>

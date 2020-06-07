@@ -1,5 +1,9 @@
 <?php
 require_once ('functions.php');
+
+include "../api_key.php";
+
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -49,7 +53,7 @@ require_once ('functions.php');
 <a href="?lan=sk">&raquo; Slovak  </a>
 
 
-<div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php" class="btn text-white"> <h1>←</h1> </a></div>
+<div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php?API_KEY=f531aa0a174a5af8025a186bbe0e568e" class="btn text-white"> <h1>←</h1> </a></div>
 
 
 <div>

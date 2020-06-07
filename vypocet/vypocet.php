@@ -1,6 +1,8 @@
 <?php
 require_once ("../inverted_pendulum/functions.php");
 
+include "../api_key.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -15,15 +17,38 @@ require_once ("../inverted_pendulum/functions.php");
 </head>
 <body>
 
+<div class="dropdwn">
+    <nav>
+        <ul>
+            <li><a href="../index.php" class="lang" > <?php echo HOME; ?>  </a></li>
+            <li><a href="/inverted_pendulum/inverted_pendulum.php" class="lang" > <?php echo TITLE1; ?> </a></li>
+            <li><a href="ball-beam" class="lang" > <?php echo TITLE2; ?> </a></li>
+            <li><a href="/suspension/suspension.php" class="lang" > <?php echo TITLE3; ?> </a></li>
 
+            <li><a href="#contact" class="lang" > <?php echo MATHEMATICS; ?> <i class="fas fa-caret-down"></i> </a>
+                <ul>
+                    <li><a href="calc" class="lang"> <?php echo COUNT; ?> </a></li>
+                    <li><a href="stats/stats.php" class="lang"> Statistics</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact" class="lang" > <?php echo CONTACT; ?> <i class="fas fa-caret-down"></i> </a>
+                <ul>
+                    <li><a href="#vladimir" class="contact" id="Vladimir">Vladimir</a></li>
+                    <li><a href="#zelko" class="contact" id="Zelko">Zelko</a></li>
+                    <li><a href="#dragana" class="contact" id="Dragana">Dragana</a></li>
+                    <li><a href="../work.php" class="contact" id="work">Work</a> </li>
+                </ul>
+            </li>
+            <li><a href="?lan=en">English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a></li>
+            <li><a href="?lan=sk">Slovak  <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a></li>
+        </ul>
+    </nav>
+</div>
 <nav class="container-fluid-nav text-center p-3">
 
     <h3><?php echo FORMULAR; ?></h3>
 </nav>
-<div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php" class="btn text-white"> <h1>←</h1> </a></div>
 
-<a href="?lan=en">English </a>
-<a href="?lan=sk">Slovak </a>
 
 <div class="container mt-5 px-5">
     <form>

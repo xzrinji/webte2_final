@@ -5,6 +5,9 @@ Language: English
 ------------------
 */
 
+define('MAIN', 'Final project');
+
+
 define('DESCRIPTION','Check or uncheck ckeckbox to show or hide graph or simulation');
 define('GRAPH', 'Graph');
 define('SIMULATION','Simulation');
@@ -32,7 +35,12 @@ define('DESCRIPTION_SUSPENSION',' The job of a car suspension is to maximize the
 //welcome.php
 
 define('INFO_API','To get access to our page please enter valid api key into page URL.');
+define('HOWTO1', "Into URL https://wt29.fei.stuba.sk:4429/finalne_zadanie/welcome.php enter API key by following this pattern.");
+define('HOWTO2', 'Pattern : https://wt29.fei.stuba.sk:4429/finalne_zadanie/welcome.php?API_KEY=ENTER_HERE_API_KEY');
+define('HOWTO3',"Key have it's own hidden place. You should know where it is.");
+define('HOWTO4', 'After you entered key, please refresh page twice.');
 define('ERROR','Bad API KEY, please enter valid one.');
+define('ERROR2','You did not enter API KEY. Please, enter API KEY.');
 
 //work.php
 
@@ -54,4 +62,5 @@ define('ZELKO','My project was Ball Beam. The first graph shows the changing pos
 define('EMAIL','Please enter Your e-mail if You want to recieve page statistics.');
 define('PROJECT', 'Task');
 define('COUNTER','Number of uses');
+define('TABLE',' This table shows number of visits/uses of listed pages/tasks.');
 ?>
