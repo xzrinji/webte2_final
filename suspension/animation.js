@@ -111,7 +111,8 @@ var nextTimer =0;
 var whichFrame = 0;
 var delay = 10;
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	let cnvs = createCanvas(windowWidth, windowHeight);
+	cnvs.parent("animation-div");
     background(100);
     nextTimer = millis() + delay;
 	M1 = new M(width/2,height/3,200,120);

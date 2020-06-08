@@ -16,15 +16,20 @@ $(function () {
 
 
 
-    $("#graph").change(function () {
+    $("#graph").change(function (e) {
 
+        e.stopPropagation();
         $("#grafy").slideToggle();
+        console.log("change");
+        e.stopPropagation();
 
     });
 
-    $("#animation").change(function () {
+    $("#animation").change(function (e) {
 
+        e.stopPropagation();
         $("#canvas-div").slideToggle();
+        
 
     });
 

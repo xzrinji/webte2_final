@@ -53,9 +53,9 @@ $octave->run("sys = ss(A-B*K,B,C,D);");
 
 $octave->run("t = 0:0.01:5;");
 $octave->run("r =". $pozicia.";");
-$octave->run("initRychlost=0;");
-$octave->run("initZrychlenie=0;");
-$octave->run("[y,t,x]=lsim(N*sys,r*ones(size(t)),t,[initRychlost;0;initZrychlenie;0]);");
+$octave->run("initPozicia=0;");
+$octave->run("initNaklon=0;");
+$octave->run("[y,t,x]=lsim(N*sys,r*ones(size(t)),t,[initPozicia;0;initNaklon;0]);");
 //$octave->run("plot(t,y)");
 
 /*

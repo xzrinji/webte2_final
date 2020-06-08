@@ -3,6 +3,8 @@
 //phpinfo();
 require_once ('../inverted_pendulum/functions.php');
 
+include '../api_key.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -28,38 +30,30 @@ require_once ('../inverted_pendulum/functions.php');
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#"><?php echo TITLE1; ?></a>
+        <a class="nav-link" href="../inverted_pendulum/inverted_pendulum.php"><?php echo TITLE1; ?></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><?php echo TITLE2; ?></a>
+        <a class="nav-link" href="../ball_beam/ball-beam.php"><?php echo TITLE2; ?></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><?php echo TITLE3; ?></a>
+        <a class="nav-link" href="../suspension/suspension.php"><?php echo TITLE3; ?></a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <?php echo MATHEMATICS; ?>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#"><?php echo COUNT; ?> </a>
-          <a class="dropdown-item" href="#">Statistics </a>
+          <a class="dropdown-item" href="../calc-api"><?php echo COUNT; ?> </a>
+          <a class="dropdown-item" href="../stats/stats.php"><?php echo STATISTICS; ?></a>
           </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <?php echo CONTACT; ?>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-          <a class="dropdown-item" href="#">Vladimir</a>
-          <a class="dropdown-item" href="#">Zelko</a>
-          <a class="dropdown-item" href="#">Dragana</a>
-          <a class="dropdown-item" href="#">Work</a>
-          
-        </div>
-      </li>
-      <li class="nav-item"><a href="?lan=en">English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a></li>
+      
+      
+    </ul>
+    <ul>
+    <li class="nav-item"><a href="?lan=en">English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a></li>
       <li class="nav-item"><a href="?lan=sk">Slovak  <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a></li>
     </ul>
   </div>
@@ -99,7 +93,7 @@ require_once ('../inverted_pendulum/functions.php');
     //echo json_encode($response);
 
     ?>
-    <table class="table table-hover" id="table-stats">
+    <table class="table-dark table table-hover" id="table-stats">
   <thead>
     <tr>
       <th scope="col"><?php echo PROJECT;?></th>
@@ -125,7 +119,7 @@ require_once ('../inverted_pendulum/functions.php');
 </table>
 
         <form action="" method="POST" id="form-mail">
-            <label><?php echo EMAIL;?></label><br>
+            <label class="text-white"><?php echo EMAIL;?></label><br>
             <input type="email"name="email_entered" placeholder="mail@mail.com"/>
             <br><br>
             <input type="submit" name="submitbutton" value="<?php echo SEND;?>" class="btn btn-primary"/>

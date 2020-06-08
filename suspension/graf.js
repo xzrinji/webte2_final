@@ -14,6 +14,7 @@ function graphs() {
         data: {
             labels: t,
             datasets: [{
+                label : "V čase meniaca sa pozícia kolesa",
                 borderColor: 'rgb(220, 220, 220)',
                 data: M1y,
                 radius: 0
@@ -32,6 +33,7 @@ function graphs() {
         data: {
             labels: t,
             datasets: [{
+                label : "V čase meniaca sa pozícia kolesa",
                 borderColor: 'rgb(220, 220, 220)',
                 data: M2y,
                 radius: 0

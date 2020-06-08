@@ -2,5 +2,7 @@ RewriteEngine On
 
 
 RewriteRule ^ball-beam?([0-9a-zA-Z_-]*)$ /finalne_zadanie/ball_beam/ball-beam.php [QSA,L]
+RewriteRule ^inverted-pendulum?([0-9a-zA-Z_-]*)$ /finalne_zadanie/inverted_pendulum/inverted_pendulum.php [QSA,L]
+RewriteRule ^suspension-model?([0-9a-zA-Z_-]*)$ /finalne_zadanie/suspension/suspension.php [QSA,L]
 RewriteRule ^calc?([0-9a-zA-Z_-]*)$ vypocet/vypocet.php [QSA,L]
 RewriteRule ^statistics?([0-9a-zA-Z_-]*)$ stats/stats.php [QSA,L]

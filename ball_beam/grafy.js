@@ -22,7 +22,7 @@
             },
 
             // Configuration options go here
-            options: {}
+            options: {responsive: true}
         });
 
         chart2 = new Chart(ctx2, {
@@ -41,7 +41,7 @@
             },
 
             // Configuration options go here
-            options: {}
+            options: {responsive: true}
         });
     }
 

@@ -19,10 +19,10 @@ include "../api_key.php";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-    <script src="script.js"></script>
-    <script type="text/javascript" src="simulation.js"></script>
-    <link rel="stylesheet" href="../style.css">
-    <script src="graph.js"></script>
+    <script src="inverted_pendulum/script.js"></script>
+    <script type="text/javascript" src="inverted_pendulum/simulation.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="inverted_pendulum/graph.js"></script>
 
     <title><?php echo TITLE1; ?> </title>
 
@@ -37,6 +37,10 @@ include "../api_key.php";
         .green{ background: #228B22; }
         .blue{ background: #0000ff; }
         label{ margin-right: 15px; }
+
+
+
+
     </style>
     <script>
         $(document).ready(function(){
@@ -75,14 +79,14 @@ include "../api_key.php";
 
     <button type="submit" class="btn btn-primary"><?php echo SEND; ?></button>
 </form>
-<div class="graph" style="width: 800px; height: 800px;">
-    <canvas id="myChart"></canvas>
-    <canvas id="myChart2"></canvas>
+<div class="graph" style="width: 600px; height: 600px; margin-left: 25%;">
+    <div class="column"><canvas id="myChart"></canvas></div>
+    <div class="column"><canvas id="myChart2"></canvas></div>
 </div>
 
 
 <!--  Simulation   -->
-<div class="simulation" id="simulation">
+<div class="simulation" id="simulation" style="margin-left: 40%;">
 
 
 </div>

@@ -1,3 +1,6 @@
+var y = [0.5];
+var a = [];
+var t = [];
 var dlzka,vozik_dlzka,vozik_vyska,rotacia,pozicia_vozika;
 var poziciaY;
 var nextTimer =0;

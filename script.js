@@ -29,6 +29,20 @@ $(function(){
           });
     });
 
+    $("#close-contact").click(function(e){
+        $(".contact-info").hide("slow");
+    });
+
+    
+    $("#card-inverted").click(function() {
+        window.location = "inverted-pendulum";
+    });
+    $("#card-ballbeam").click(function() {
+        window.location = "ball-beam";
+    });
+    $("#card-suspension").click(function() {
+        window.location = "suspension-model";
+    });
 });
 
 var arrLang = new Array();

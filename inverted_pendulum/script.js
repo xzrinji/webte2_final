@@ -1,4 +1,4 @@
-var y = [];
+var y = [0.5];
 var a = [];
 var t = [];
 
@@ -54,7 +54,7 @@ $(function(){
                 type: "GET",
                 dataType: "json",
                 url: "https://wt29.fei.stuba.sk:4429/finalne_zadanie/rest/inverted-pendulum-api.php",
-                data: {},
+                data: data,
                 success: function(data)
                 {
 

@@ -1,12 +1,13 @@
 var nextTimer =0;
 var whichFrame = 0;
 var delay = 10;
+var koef;
 function setup() {
-    let renderer = createCanvas(windowWidth, windowHeight);
+    let renderer = createCanvas(windowWidth, windowHeight/2);
       renderer.parent("canvas-div");
     background(100);
     nextTimer = millis() + delay;
-      
+    koef = 200;
 }
 
 a = [];
@@ -29,28 +30,41 @@ function draw() {
     
 	position = 25 + y[whichFrame] * (width/2-50);
 	angle = -a[whichFrame] * 400;
-	motorRadius = 180;
+	motorRadius =  height/3;
 	
 	push();
 		translate(7*width/10,5*height/6);
 		rotate(-PI);
-		rotate(angle*2.5*PI);
+		rotate(angle*PI);
 		stroke(190);
 		fill(80);
 		strokeWeight(10);
 		
 		ellipse(0,0, motorRadius, motorRadius);
+        
 		strokeWeight(1);
 
 		push();
 			translate(motorRadius/2,0);
 			rotate(3*PI);
-			rotate(-angle*2.5*PI-angle/PI*3);
+			rotate(-angle*PI-angle/PI*3);
 			rectMode(RADIUS)
 			noStroke();
-			fill(110, 62, 0);
-			rect(0,-118+angle*100, 10, 118-angle*100);
+			fill(110, 110, 110);
+			rect(0,-70-angle*300, 10, 70+angle*300);
 		pop();
+	pop();
+    push();
+		translate(width/4, height/2);
+		rotate(-angle);
+		fill(230,0,0);
+		ellipse(position,-25,50,50);
+		fill(235,235,235);
+		//rect(0,0, width/2, 20)
+        fill(50);
+		
+        rect(0,0, width, -200)
+  
 	pop();
 	
 	push();
@@ -60,6 +74,10 @@ function draw() {
 		ellipse(position,-25,50,50);
 		fill(235,235,235);
 		rect(0,0, width/2, 20)
+        fill(50);
+		
+        //rect(0,0, width/2, -200)
+  
 	pop();
 	
 }

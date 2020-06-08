@@ -32,23 +32,23 @@ require_once('inverted_pendulum/functions.php');
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><?php echo TITLE1; ?></a>
+                        <a class="nav-link" href="inverted-pendulum"><?php echo TITLE1; ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><?php echo TITLE2; ?></a>
+                        <a class="nav-link" href="ball-beam"><?php echo TITLE2; ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><?php echo TITLE3; ?></a>
+                        <a class="nav-link" href="suspension-model"><?php echo TITLE3; ?></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <?php echo MATHEMATICS; ?>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#"><?php echo COUNT; ?> </a>
-                            <a class="dropdown-item" href="#"><?php echo STATISTICS; ?>  </a>
+                            <a class="dropdown-item" href="calc-api"><?php echo COUNT; ?> </a>
+                            <a class="dropdown-item" href="stats/stats.php"><?php echo STATISTICS; ?>  </a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -59,52 +59,73 @@ require_once('inverted_pendulum/functions.php');
                             <a class="dropdown-item contact" href="#vladimir" id="vladimir">Vladimir</a>
                             <a class="dropdown-item contact" href="#zelko" id="zelko">Zelko</a>
                             <a class="dropdown-item contact" href="#dragana" id="dragana">Dragana</a>
-                            <a class="dropdown-item contact" href="work.php">Work</a>
+                            <a class="dropdown-item contact" href="work.php"><?php echo WORK; ?></a>
 
                         </div>
                     </li>
-                    <li class="nav-item"><a href="?lan=en">English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a></li>
-                    <li class="nav-item"><a href="?lan=sk">Slovak <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a></li>
+                    
                 </ul>
+                <ul>
+                <li class="nav-item "><a href="?lan=en">English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a></li>
+                    <li class="nav-item"><a href="?lan=sk">Slovak <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a></li>
+                    
+                </ul>
+
             </div>
         </nav>
     </div>
-    <div class="jumbotron p-5">
+    <div class="jumbotron p-5 rounded-0">
         <div class="container p-5">
             <h1 class="display-4">Computer Aided System API</h1>
             <p class="lead"><?php echo WELCOME; ?></p>
 
         </div>
     </div>
-
+    <div class="contact-info container p-3">
+        
+    <div class="card text-white rounded-0 shadow">
+    <h2 class="text-center"> <?php echo CONTACT; ?></h2>
+      <div class="card-body">
+        <h5 class="card-title firstname"></h5>
+        <h5 class="card-title lastname"></h5>
+        <p class="card-text email"></p>
+        
+        <p class="card-text project"></p>
+        <a href="#" class="btn btn-primary" id="close-contact">Close</a>
+      </div>
+    </div>
+                
+    </div>
     <div class="container-fluid d-flex h-100 flex-column card-row p-5">
     <div class="card-deck container text-white ">
-        <div class="card shadow border-0">
+        <div class="card border-0 box" >
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Cart-pendulum.svg/300px-Cart-pendulum.svg.png" class="card-img img-responsive" alt="inverted-pendulum">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Cart-pendulum.svg/300px-Cart-pendulum.svg.png" style=" height: 350px;" class="card-img img-responsive" id="card-inverted" alt="inverted-pendulum">
             <div class="card-body">
+            
                 <h5 class="card-title"><?php echo TITLE1; ?></h5>
-                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Show More</a>
+            
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><?php echo SHOW; ?></a>
                 <p class="card-text collapse multi-collapse pt-2" id="multiCollapseExample1"><?php echo DESCRIPTION_INVERTED; ?></p>
                
             </div>
         </div>
-        <div class="card shadow border-0">
-        <img src="https://i.ibb.co/9bW3nGc/ballbeam.png" class="card-img img-responsive" alt="ballbeam" >
+        <div class="card box border-0" >
+        <img src="https://i.ibb.co/9bW3nGc/ballbeam.png" class="card-img img-responsive" id="card-ballbeam" alt="ballbeam" style=" height: 350px;">
             <div class="card-body">
-                <h5 class="card-title"><?php echo TITLE2; ?></h5>
-                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Show More</a>
-                
+                    
+            <h5 class="card-title"><?php echo TITLE2; ?></h5>
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2"><?php echo SHOW; ?></a>
                 <p class="card-text collapse multi-collapse pt-2" id="multiCollapseExample2"><?php echo DESCRIPTION_BALL; ?></p>
                 
             </div>
         </div>
-        <div class="card shadow border-0">
-        <img src="suspension.png" class="card-img shadow" alt="suspension" style=" height: 350px;">
+        <div class="card box border-0" >
+        <img src="suspension.png" class="card-img shadow" alt="suspension" id="card-suspension" style=" height: 350px;">
             <div class="card-body">
+            
                 <h5 class="card-title"><?php echo TITLE3; ?></h5>
-                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">Show More</a>
-                
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3"><?php echo SHOW; ?></a>
                 <p class="card-text collapse multi-collapse pt-2" id="multiCollapseExample3"><?php echo DESCRIPTION_SUSPENSION; ?></p>
                
             </div>
@@ -113,23 +134,7 @@ require_once('inverted_pendulum/functions.php');
     </div>
 
 
-    <div class="background">
-
-        <div class="body" style="position: center ; margin-bottom: 5%;">
-
-
-            <div class="contact-info">
-                <div class="firstname"></div>
-                <div class="lastname"></div>
-                <div class="email"></div>
-                <div class="project"></div>
-            </div>
-
-
-        </div>
-
-       
-    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
