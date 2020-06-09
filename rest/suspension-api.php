@@ -62,7 +62,7 @@ $result["t"]= array_map('floatval',explode("\n", $octave->query("t")));
 $result["r"] = array_map('floatval',explode("\n", $octave->query("r")));
 
 
-$sql = "INSERT INTO `informations`(`id_author`,`requested_api`, `sent_vars`, `info`, `error`) VALUES (1, 'suspension-api','{$nova_pozicia}', 'success', NULL)";
+$sql = "INSERT INTO `informations`(`id_author`,`requested_api`, `sent_vars`, `info`, `error`) VALUES (1, 'suspension-api','{$novaPrekazka}', 'success', NULL)";
 
 
 if ($conn->query($sql) === TRUE) {
