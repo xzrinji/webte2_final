@@ -79,7 +79,7 @@ require_once('inverted_pendulum/functions.php');
             <h1 class="display-4">Computer Aided System API</h1>
             <p class="lead"><?php echo WELCOME; ?></p>
             <p class="lead">
-    <a class="btn btn-primary btn-lg button-theme" href="api-docs" role="button">Dokumentácia API</a>
+    <a class="btn btn-primary btn-lg button-theme button" href="api-docs" role="button">Dokumentácia API</a>
   </p>
         </div>
     </div>
@@ -107,7 +107,7 @@ require_once('inverted_pendulum/functions.php');
             
                 <h5 class="card-title"><?php echo TITLE1; ?></h5>
             
-                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><?php echo SHOW; ?></a>
+                <a class="btn btn-primary shadow-sm" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><?php echo SHOW; ?></a>
                 <p class="card-text collapse multi-collapse pt-2" id="multiCollapseExample1"><?php echo DESCRIPTION_INVERTED; ?></p>
                
             </div>

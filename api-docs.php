@@ -406,7 +406,7 @@ require_once('inverted_pendulum/functions.php');
                             <p><strong>Type: application/json</strong></p>
                             <p><strong>Request</strong>:</p>
                             <pre><code>{
-  "initPrekayka": 0,
+  "initPrekazka": 0,
   "novaPrekazka": 0.1
 }</code>
                           </div>
