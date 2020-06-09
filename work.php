@@ -89,40 +89,40 @@ require_once("inverted_pendulum/functions.php");
         </nav>
     </div>
 
-    <div class="row">
-        <div class="column" style="background-color:#aaa;">
+    <div class="row d-sm-flex">
+        <div class="col-md mt-2 p-3  shadow" style="background-color:#aaa; height: auto;">
             <h2>Zelko Urban</h2><br>
-            <label><input type="checkbox"> GitHub</label><br>
+            <label><input type="checkbox" checked> GitHub</label><br>
             <label><input type="checkbox"> <?php echo BILING ?></label><br>
-            <label><input type="checkbox"> <?php echo API ?></label><br>
+            <label><input type="checkbox" checked> <?php echo API ?></label><br>
             <label><input type="checkbox"> <?php echo API_KEY ?></label><br>
-            <label><input type="checkbox"> <?php echo INDIVIDUAL ?> </label><br>
-            <label><input type="checkbox"> <?php echo LOGGING ?></label><br>
-            <label><input type="checkbox"> <?php echo DESC_API ?></label><br>
-            <label><input type="checkbox"> <?php echo STATISTICS ?></label><br>
+            <label><input type="checkbox" checked> <?php echo INDIVIDUAL ?> </label><br>
+            <label><input type="checkbox" checked> <?php echo LOGGING ?></label><br>
+            <label><input type="checkbox" checked> <?php echo DESC_API ?></label><br>
+            <label><input type="checkbox" checked> <?php echo STATISTICS ?></label><br>
 
         </div>
-        <div class="column" style="background-color:#bbb;">
+        <div class="col-md mt-2 p-3  shadow" style="background-color:#bbb; height: auto;">
             <h2>Dragana Zrinji</h2><br>
-            <label><input type="checkbox"> GitHub</label><br>
-            <label><input type="checkbox"> <?php echo BILING ?></label><br>
+            <label><input type="checkbox" checked> GitHub</label><br>
+            <label><input type="checkbox" checked> <?php echo BILING ?></label><br>
             <label><input type="checkbox"> <?php echo API ?></label><br>
-            <label><input type="checkbox"> <?php echo API_KEY ?></label><br>
-            <label><input type="checkbox"> <?php echo INDIVIDUAL ?> </label><br>
+            <label><input type="checkbox" checked> <?php echo API_KEY ?></label><br>
+            <label><input type="checkbox" checked> <?php echo INDIVIDUAL ?> </label><br>
             <label><input type="checkbox"> <?php echo LOGGING ?></label><br>
-            <label><input type="checkbox"> <?php echo DESC_API ?></label><br>
-            <label><input type="checkbox"> <?php echo STATISTICS ?></label><br>
+            <label><input type="checkbox" checked> <?php echo DESC_API ?></label><br>
+            <label><input type="checkbox" checked> <?php echo STATISTICS ?></label><br>
 
         </div>
-        <div class="column" style="background-color:#ccc;">
+        <div class="col-md mt-2  p-3  shadow" style="background-color:#ccc; height: auto;">
             <h2>Vladimir Petrovic</h2><br>
             <label><input type="checkbox"> GitHub</label><br>
             <label><input type="checkbox"> <?php echo BILING ?></label><br>
-            <label><input type="checkbox"> <?php echo API ?></label><br>
+            <label><input type="checkbox" checked> <?php echo API ?></label><br>
             <label><input type="checkbox"> <?php echo API_KEY ?></label><br>
-            <label><input type="checkbox"> <?php echo INDIVIDUAL ?> </label><br>
+            <label><input type="checkbox" checked> <?php echo INDIVIDUAL ?> </label><br>
             <label><input type="checkbox"> <?php echo LOGGING ?></label><br>
-            <label><input type="checkbox"> <?php echo DESC_API ?></label><br>
+            <label><input type="checkbox" checked> <?php echo DESC_API ?></label><br>
             <label><input type="checkbox"> <?php echo STATISTICS ?></label><br>
 
         </div>
@@ -131,18 +131,18 @@ require_once("inverted_pendulum/functions.php");
     <h1 style="text-align: center; color:darkslategray"> <?php echo TITLE5 ?></h1>
 
     <div class="row">
-        <div class="column" style="background-color:#ccc;">
+        <div class="col-md mt-2  p-3 shadow" style="background-color:#ccc; height: auto;">
 
             <h3><?php echo TITLE2 ?></h3>
             <p> <?php echo ZELKO ?></p>
 
         </div>
-        <div class="column" style="background-color:#bbb;">
+        <div class="col-md mt-2  p-3  shadow" style="background-color:#bbb; height: auto;">
             <h3> <?php echo TITLE1 ?></h3>
             <p> <?php echo DRAGANA ?></p>
 
         </div>
-        <div class="column" style="background-color:#aaa;">
+        <div class="col-md mt-2  p-3  shadow" style="background-color:#aaa; height: auto;">
 
             <h3><?php echo TITLE3 ?></h3>
             <p><?php echo VLADO;?></p>
