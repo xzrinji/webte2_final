@@ -11,7 +11,7 @@ require_once('inverted_pendulum/functions.php');
 <html>
 
 <head>
-  <title>CAS API Documentation</title>
+  <title><?php echo CAS_DOC; ?></title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -249,7 +249,7 @@ require_once('inverted_pendulum/functions.php');
     
     <div class="jumbotron p-5 rounded-0" style="margin-bottom: 5% !important;">
         <div class="container p-5">
-            <h1 class="display-4">CAS API Dokumentácia</h1>
+            <h1 class="display-4"><?php echo CAS_DOC; ?></h1>
             
         </div>
     </div>
@@ -259,7 +259,7 @@ require_once('inverted_pendulum/functions.php');
         
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 id="posts" class="panel-title">Popis API</h3>
+            <h3 id="posts" class="panel-title"><?php echo DESC_API; ?></h3>
           </div>
           <div class="panel-body">
 
@@ -293,7 +293,7 @@ require_once('inverted_pendulum/functions.php');
                     <div class="list-group">
                       <div onclick="window.location.href = '#calc__get'" class="list-group-item"><span class="badge badge_get">get</span>
                         <div class="method_description">
-                          <p>Vracia výpočet</p>
+                          <p><?php echo VYPOCET; ?></p>
                         </div>
                         <div class="clearfix"></div>
                       </div>
@@ -406,7 +406,7 @@ require_once('inverted_pendulum/functions.php');
                             <p><strong>Type: application/json</strong></p>
                             <p><strong>Request</strong>:</p>
                             <pre><code>{
-  "initPrekazka": 0,
+  "initPrekayka": 0,
   "novaPrekazka": 0.1
 }</code>
                           </div>

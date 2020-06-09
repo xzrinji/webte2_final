@@ -10,7 +10,7 @@ $('#form-mail').on('submit', function (e) {
     $.ajax({
         type: "POST",
         dataType: "json",
-        url: "mail.php",
+        url: "stats/mail.php",
         data: data,
         success: function (data) {
 

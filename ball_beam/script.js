@@ -71,6 +71,7 @@ $(function () {
 
                     resetGraphs();
                     graphs();
+                    whichFrame = 0;
                 },
                 error: function (e) {
                     console.log(e);

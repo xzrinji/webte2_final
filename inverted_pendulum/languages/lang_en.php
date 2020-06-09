@@ -19,6 +19,11 @@ define('TITLE2','Ball Beam');
 define('TITLE3','Suspension');
 define('SUSP1','The graph indicates the changing position of the wheel over time when approaching various obstacles.');
 define('CHOOSE','Choose');
+define('CLOSE','Close');
+define('DOCUMENTATION','API Documentation');
+define('CAS_DOC','CAS API Documentation');
+define('DESC_API','API Description');
+
 
 
 //vypocet.php
@@ -68,6 +73,24 @@ define('EMAIL','Please enter Your e-mail if You want to recieve page statistics.
 define('PROJECT', 'Task');
 define('COUNTER','Number of uses');
 define('TABLE',' This table shows number of visits/uses of listed pages/tasks.');
+
+//api-docs
+
+define('VYPOCET','Returns the calculation');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
 
 
 ?>

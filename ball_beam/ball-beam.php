@@ -17,7 +17,7 @@ include "../api_key.php";
   <script src="ball_beam/animation.js"></script>
   <script src="ball_beam/grafy.js"></script>
   
-
+ <link rel="stylesheet" href="style.css">
   <title><?php echo TITLE2; ?> </title>
 </head>
 
@@ -30,8 +30,8 @@ include "../api_key.php";
         <h1>←</h1>
       </a></div>
       <div>
-<a href="?lan=en">&raquo; English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a>
-<a href="?lan=sk">&raquo; Slovak  <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a>
+<a href="?lan=en">English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a>
+<a href="?lan=sk">Slovak  <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a>
 </div>
   </nav>
 
@@ -41,7 +41,7 @@ include "../api_key.php";
 
 
 
-  <div class=" bg-dark text-white" id="bottom">
+  <div class=" bg-dark text-white pt-3" id="bottom">
 
     <div class="row input d-flex align-items-center flex-column">
       <form id="api-call-form">

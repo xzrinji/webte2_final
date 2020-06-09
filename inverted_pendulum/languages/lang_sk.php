@@ -17,7 +17,11 @@ define('TITLE1','Inverzne kyvadlo');
 define('TITLE2','Gulicka na tyci');
 define('TITLE3','Tlmic kolesa');
 define('SUSP1','Graf označuje v čase meniacu sa pozíciu kolesa pri nabiehaní na rôzne prekážky.');
-define('CHOOSE','Vyber');
+define('CHOOSE','Vybrať');
+define('CLOSE','Zavrieť');
+define('DOCUMENTATION','Dokumentácia API');
+define('CAS_DOC','CAS API Dokumentácia');
+define('DESC_API','Popis API');
 
 
 //index.php
@@ -68,4 +72,23 @@ define('EMAIL', 'Ak chcete získať štatistiku, zadajte svoj e-mail.');
 define('PROJECT', 'Úloha');
 define('COUNTER','Počet užívaní');
 define('TABLE','Táto tabuľka zobrazuje počet návštev / použití uvedených stránok / úloh.');
+
+//api-docs.php
+
+define('VYPOCET','Vracia výpočet');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+define('','');
+
 ?>

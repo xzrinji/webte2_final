@@ -10,7 +10,7 @@ function setup() {
     koef = 200;
 }
 
-a = [];
+a = [0];
 y = [0.5];
 function draw() {
 	background(50);
@@ -19,7 +19,7 @@ function draw() {
     if (millis() > nextTimer) {
         whichFrame = whichFrame + 1;
         if (whichFrame >= y.length) {
-          whichFrame = 0;
+          whichFrame = y.length-1;
           
         }
         nextTimer = millis() + delay;

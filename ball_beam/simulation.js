@@ -1,5 +1,6 @@
 var y = [0.5];
 var a = [];
+var whichFrame = 0;
 $(function(){
   
 
@@ -49,7 +50,7 @@ class Ball {
   let angle = 0.0;
   var delay = 10;
 var nextTimer =0;
-var whichFrame = 0;
+
   function setup() {
       
       let renderer = createCanvas(windowWidth/2, windowHeight/2);
@@ -71,14 +72,15 @@ var whichFrame = 0;
       background(52,58,64);
       //background(51);
   
-    
+    console.log("2");
     if (millis() > nextTimer) {
         whichFrame = whichFrame + 1;
         if (whichFrame >= y.length) {
-          whichFrame = 0;
+          //whichFrame = 0;
           
         }
         nextTimer = millis() + delay;
+        console.log(whichFrame);
       }
    
    
