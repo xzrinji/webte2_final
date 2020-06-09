@@ -4,8 +4,8 @@ include("../config.php");
 error_reporting(E_ERROR | E_PARSE);
 
 
-$pozicia = $_GET["initPos"];
-$nova_pozicia = $_GET["pozicia"];
+$initPrekazka = $_GET["initPrekazka"];
+$novaPrekazka = $_GET["novaPrekazka"];
 $octave=new Octave(false);
 
 $octave->run("pkg load control");
@@ -30,7 +30,7 @@ $octave->run("K = [0 2.3e6 5e8 0 8e6];");
 $octave->run("sys = ss(Aa-Ba(:,1)*K,Ba,Ca,Da);");
 
 $octave->run("t = 0:0.01:5;");
-$octave->run("r =0.1;");
+$octave->run("r =". $initPrekazka.";");
 $octave->run("initX1=0;");
 $octave->run("initX1d=0;");
 $octave->run("initX2=0;");
@@ -46,7 +46,7 @@ print_r($octave->query("plot(t,y)"));
 echo "</pre>";
 */
 
-$octave->run("r= -0.1;");
+$octave->run("r=".$novaPrekazka.";");
 $octave->run("[y,t,x]=lsim(sys*[0;1],r*ones(size(t)),t,x(size(x,1),:));");
 //$octave->run("plot(t,y)");
 
@@ -59,6 +59,7 @@ echo "</pre>";
 $result["M2"]= array_map('floatval',explode("\n", $octave->query("x(:,1)")));
 $result["M1"]= array_map('floatval',explode("\n", $octave->query("x(:,3)")));
 $result["t"]= array_map('floatval',explode("\n", $octave->query("t")));
+$result["r"] = array_map('floatval',explode("\n", $octave->query("r")));
 
 
 $sql = "INSERT INTO `informations`(`id_author`,`requested_api`, `sent_vars`, `info`, `error`) VALUES (1, 'suspension-api','{$nova_pozicia}', 'success', NULL)";

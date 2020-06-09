@@ -140,20 +140,21 @@ function draw() {
         nextTimer = millis() + delay;
     }
    
-	r = height-(0.1*400);
+	prekazkaY = height-(r*200);
 	//noStroke();
 	y = y + 0.1
 	background(70);
-	M1.move(M1y[whichFrame]*400);
-	M2.move(M2y[whichFrame]*400);
+	M1.move(M1y[whichFrame]*200-r*200);
+	
+	M2.move(-M2y[whichFrame]*200);
 	K1.setFrom(x,M1.y+M1.h/2);
 	K1.setTo(x,M2.y-M2.h/2);
 	K2.setFrom(x,M2.y+M2.h/2);
-	K2.setTo(x,r);
+	K2.setTo(x,prekazkaY);
 	b1.top(x2,M1.y+M1.h/2);
 	b1.bottom(x2, M2.y-M2.h/2);
 	b2.top(x2, M2.y+M2.h/2)
-	b2.bottom(x2,r)
+	b2.bottom(x2,prekazkaY)
 	b1.draw();
 	b2.draw();
 	K1.draw();
@@ -164,6 +165,6 @@ function draw() {
 	M2.draw();
 	
 	rectMode(CORNER);
-	rect(0,r,width,height/4);
+	rect(0,prekazkaY,width,height/4);
 	
 }

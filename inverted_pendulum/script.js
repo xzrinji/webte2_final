@@ -1,6 +1,4 @@
-var y = [0.5];
-var a = [];
-var t = [];
+
 
 function resetGraphs()
 {

@@ -46,26 +46,43 @@ include "../api_key.php";
     </style>
 </head>
 <body>
-<div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php?API_KEY=f531aa0a174a5af8025a186bbe0e568e"> <h1>←</h1> </a></div>
 
+<nav class="navbar">
+<div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php?API_KEY=f531aa0a174a5af8025a186bbe0e568e"> <h1>←</h1> </a></div>
+<div>
 <a href="?lan=en">&raquo; English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a>
 <a href="?lan=sk">&raquo; Slovak  <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a>
+</div>
+</nav>
 
-<h4><?php echo SUSP1; ?></h4>
 
-<div>
+
+<form id="api-call-form" class="container">
+    <div class="form-group">
+        <label for="prekazka"> Výška prekážky :  </label>
+        <input type="number" step="0.01" class="form-control" id="prekazka" aria-describedby="prekazkaTip" name="novaPrekazka" placeholder="0.0-1.0">
+        <small id="prekazkaTip" class="form-text text-danger invisible"><?php echo ALERT; ?></small>
+    </div>
+
+    <button type="submit" class="btn btn-primary"><?php echo SEND; ?></button>
+</form>
+
+<div class="container">
 
     <label><input type="checkbox"  value="column" checked><?php echo GRAPH; ?>  </label><br>
     <label><input type="checkbox"  value="animacia" checked> <?php echo SIMULATION; ?> </label>
 
 </div>
+<p><?php echo SUSP1; ?></p>
+
 
 <div class="row" >
-<div  class="column">
+<div  class="column" id="graf1">
+    
     <canvas  id="myChart"></canvas>
 </div>
 <br>
-<div class="column">
+<div class="column" id="graf2">
     <canvas  id="myChart2"></canvas>
 </div>
 </div>

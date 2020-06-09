@@ -29,10 +29,10 @@ include "../api_key.php";
     <div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php?API_KEY=f531aa0a174a5af8025a186bbe0e568e" class="btn text-white">
         <h1>←</h1>
       </a></div>
-    <div>
-      <a href="?lan=en">&raquo; English</a>
-      <a href="?lan=sk">&raquo; Slovak</a>
-    </div>
+      <div>
+<a href="?lan=en">&raquo; English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a>
+<a href="?lan=sk">&raquo; Slovak  <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a>
+</div>
   </nav>
 
 
