@@ -29,28 +29,31 @@ include "../api_key.php";
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../inverted_pendulum/inverted_pendulum.php"><?php echo TITLE1; ?></a>
+                    <a class="nav-link" href="inverted-pendulum"><?php echo TITLE1; ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../ball_beam/ball-beam.php"><?php echo TITLE2; ?></a>
+                    <a class="nav-link" href="ball-beam"><?php echo TITLE2; ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../suspension/suspension.php"><?php echo TITLE3; ?></a>
+                    <a class="nav-link" href="suspension-model"><?php echo TITLE3; ?></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <?php echo MATHEMATICS; ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="calc-api"><?php echo COUNT; ?> </a>
-                        <a class="dropdown-item" href="../stats/stats.php">Statistics </a>
+                        <a class="dropdown-item" href="statistics"><?php echo STATISTICS; ?> </a>
                     </div>
                 </li>
 
+
+            </ul>
+            <ul>
                 <li class="nav-item"><a href="?lan=en">English <img src="https://www.countryflags.io/gb/flat/48.png" alt="english_flag"></a></li>
-                <li class="nav-item"><a href="?lan=sk">Slovak  <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a></li>
+                <li class="nav-item"><a href="?lan=sk">Slovak <img src="https://www.countryflags.io/sk/flat/48.png" alt="slovak_flag"></a></li>
             </ul>
         </div>
     </nav>

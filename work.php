@@ -75,7 +75,7 @@ require_once("inverted_pendulum/functions.php");
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="calc-api"><?php echo COUNT; ?> </a>
-                            <a class="dropdown-item" href="stats/stats.php"><?php echo STATISTICS; ?> </a>
+                            <a class="dropdown-item" href="statistics"><?php echo STATISTICS; ?> </a>
                         </div>
                     </li>
                    
@@ -145,6 +145,7 @@ require_once("inverted_pendulum/functions.php");
         <div class="column" style="background-color:#aaa;">
 
             <h3><?php echo TITLE3 ?></h3>
+            <p><?php echo VLADO;?></p>
 
 
         </div>

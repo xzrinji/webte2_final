@@ -39,8 +39,6 @@ include "../api_key.php";
         label{ margin-right: 15px; }
 
 
-
-
     </style>
     <script>
         $(document).ready(function(){
@@ -53,15 +51,18 @@ include "../api_key.php";
 
 </head>
 <body>
-<a href="?lan=en">&raquo; English </a>
-<a href="?lan=sk">&raquo; Slovak  </a>
+<nav class="navbar">
+    <div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php?API_KEY=f531aa0a174a5af8025a186bbe0e568e"> <h1 style="color: white">←</h1> </a></div>
 
-
-<div><a href="https://wt29.fei.stuba.sk:4429/finalne_zadanie/index.php?API_KEY=f531aa0a174a5af8025a186bbe0e568e" class="btn text-white"> <h1>←</h1> </a></div>
-
-
-<div>
-    <label > <?php echo DESCRIPTION; ?>  </label> <br>
+   <h2 style="color: white; text-align: center"> <?php echo TITLE1;?> </h2>
+    <div>
+        <a href="?lan=en"  style="color: white;padding-left:5em" >&raquo; English</a>
+        <a href="?lan=sk"  style="color: white; padding-left:2em">&raquo; Slovak  </a>
+    </div>
+</nav>
+<div class="formovanie">
+<div style="text-align: center;">
+    <label> <?php echo DESCRIPTION; ?>  </label> <br>
 
     <label><input type="checkbox" name="Checkbox" value="graph" checked><?php echo GRAPH; ?>  </label>
     <label><input type="checkbox" name="Checkbox" value="simulation" checked> <?php echo SIMULATION; ?> </label>
@@ -70,24 +71,29 @@ include "../api_key.php";
 
 <!-- Graph  -->
 
-<form id="api-call-form">
-    <div class="form-group">
-        <label for="pozicia"> Choose :  </label>
-        <input type="number" step="0.01" class="form-control w-25" id="pozicia" aria-describedby="poziciaTip" name="pozicia" placeholder="0.0-1.0">
+<form id="api-call-form" >
+    <div class="form-group" id="move" >
+        <label for="pozicia"><?php echo CHOOSE; ?>  </label>
+        <input type="number"  step="0.01" class="form-control w-25" id="pozicia" aria-describedby="poziciaTip" name="pozicia" placeholder="0.0-1.0">
         <small id="poziciaTip" class="form-text text-danger invisible"><?php echo ALERT; ?></small>
     </div>
 
-    <button type="submit" class="btn btn-primary"><?php echo SEND; ?></button>
+    <button type="submit" class="btn btn-primary" style="margin-left: 45%;"><?php echo SEND; ?></button>
 </form>
-<div class="graph" style="width: 600px; height: 600px; margin-left: 25%;">
+</div>
+<div class="colon-div">
+    <div class="colona">
+<div class="graph" style="width: 600px; height: 600px; margin-left: 5%;">
     <div class="column"><canvas id="myChart"></canvas></div>
     <div class="column"><canvas id="myChart2"></canvas></div>
 </div>
-
+    </div>
 
 <!--  Simulation   -->
-<div class="simulation" id="simulation" style="margin-left: 40%;">
-
+    <div class="colona">
+<div class="simulation" id="simulation" style="margin-left: 5%; margin-top: 5%">
+</div>
+</div>
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

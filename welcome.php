@@ -20,10 +20,7 @@ require_once ('inverted_pendulum/functions.php');
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    <style>
 
-
-    </style>
 </head>
 <body>
 
@@ -72,8 +69,8 @@ require_once ('inverted_pendulum/functions.php');
     </nav>
 </div>
 <div class="body">
-<div class="bg-image"><img src="background.jpg" alt="background-image"></div>
-    <div class="about">
+<div class="bg-image"></div>
+    <div class="about" style="margin-top: 5%; height: 400px;">
 
         <h3> <?php echo INFO_API;?> </h3>
         <br>

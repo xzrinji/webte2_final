@@ -48,7 +48,7 @@ require_once('inverted_pendulum/functions.php');
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="calc-api"><?php echo COUNT; ?> </a>
-                            <a class="dropdown-item" href="stats/stats.php"><?php echo STATISTICS; ?>  </a>
+                            <a class="dropdown-item" href="statistics"><?php echo STATISTICS; ?>  </a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -78,7 +78,9 @@ require_once('inverted_pendulum/functions.php');
         <div class="container p-5">
             <h1 class="display-4">Computer Aided System API</h1>
             <p class="lead"><?php echo WELCOME; ?></p>
-
+            <p class="lead">
+    <a class="btn btn-primary btn-lg button-theme" href="api-docs" role="button">Dokumentácia API</a>
+  </p>
         </div>
     </div>
     <div class="contact-info container p-3">

@@ -6,3 +6,4 @@ RewriteRule ^inverted-pendulum?([0-9a-zA-Z_-]*)$ /finalne_zadanie/inverted_pendu
 RewriteRule ^suspension-model?([0-9a-zA-Z_-]*)$ /finalne_zadanie/suspension/suspension.php [QSA,L]
 RewriteRule ^calc?([0-9a-zA-Z_-]*)$ vypocet/vypocet.php [QSA,L]
 RewriteRule ^statistics?([0-9a-zA-Z_-]*)$ stats/stats.php [QSA,L]
+RewriteRule ^api-docs?([0-9a-zA-Z_-]*)$ /finalne_zadanie/api-docs.php [QSA,L]

@@ -17,6 +17,7 @@ define('TITLE1','Inverzne kyvadlo');
 define('TITLE2','Gulicka na tyci');
 define('TITLE3','Tlmic kolesa');
 define('SUSP1','Graf označuje v čase meniacu sa pozíciu kolesa pri nabiehaní na rôzne prekážky.');
+define('CHOOSE','Vyber');
 
 
 //index.php
