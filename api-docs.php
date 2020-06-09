@@ -349,7 +349,7 @@ require_once('inverted_pendulum/functions.php');
                       </div>
                       <div class="modal-body">
                         <div class="alert alert-info">
-                          <p>Vracia výsledok požiadaného výpočtu</p>
+                            <p><?php echo POZIADVYP; ?></p>
                         </div>
                         <ul class="nav nav-tabs">
                           <li class="active"><a href="#calc__get_request" data-toggle="tab">Request</a></li>
@@ -393,7 +393,7 @@ require_once('inverted_pendulum/functions.php');
                       </div>
                       <div class="modal-body">
                         <div class="alert alert-info">
-                          <p>Vracia polia s polohámi častí pre animácii simulácii</p>
+                          <p><?php echo RET_ARR; ?></p>
                         </div>
                         <ul class="nav nav-tabs">
                           <li class="active"><a href="#suspension__get_request" data-toggle="tab">Request</a></li>
@@ -467,7 +467,7 @@ require_once('inverted_pendulum/functions.php');
                       </div>
                       <div class="modal-body">
                         <div class="alert alert-info">
-                          <p>Vracia polia s polohámi častí pre animácii simulácii</p>
+                          <p><?php echo RET_ARR; ?></p>
                         </div>
                         <ul class="nav nav-tabs">
                           <li class="active"><a href="#posts__slug__get_request" data-toggle="tab">Request</a></li>
@@ -533,7 +533,7 @@ require_once('inverted_pendulum/functions.php');
                       </div>
                       <div class="modal-body">
                         <div class="alert alert-info">
-                          <p>Vracia polia s polohámi častí pre animácii simulácii</p>
+                          <p><?php echo RET_ARR; ?></p>
                         </div>
                         <ul class="nav nav-tabs">
                           <li class="active"><a href="#ball__get_request" data-toggle="tab">Request</a></li>

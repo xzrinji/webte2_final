@@ -59,7 +59,7 @@ include "../api_key.php";
 
 <form id="api-call-form" class="container">
     <div class="form-group">
-        <label for="prekazka"> Výška prekážky :  </label>
+        <label for="prekazka"> <?php echo PREKAZKA; ?> :  </label>
         <input type="number" step="0.01" class="form-control" id="prekazka" aria-describedby="prekazkaTip" name="novaPrekazka" placeholder="0.0-1.0">
         <small id="prekazkaTip" class="form-text text-danger invisible"><?php echo ALERT; ?></small>
     </div>

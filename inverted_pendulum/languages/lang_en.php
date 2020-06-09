@@ -23,7 +23,7 @@ define('CLOSE','Close');
 define('DOCUMENTATION','API Documentation');
 define('CAS_DOC','CAS API Documentation');
 define('DESC_API','API Description');
-
+define('PREKAZKA','Obstacle height');
 
 
 //vypocet.php
@@ -77,20 +77,9 @@ define('TABLE',' This table shows number of visits/uses of listed pages/tasks.')
 //api-docs
 
 define('VYPOCET','Returns the calculation');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
+define('POZIADVYP','Returns the result of the requested calculation');
+define('RET_ARR','Returns arrays with positions specifically for simulation animation.');
+
 
 
 ?>

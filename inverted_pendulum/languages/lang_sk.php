@@ -5,23 +5,24 @@ Language: Slovak
 -----------------
 */
 
-define('MAIN','Finalne zadanie');
+define('MAIN','Finálne zadanie');
 
 define('DESCRIPTION','Ak chcete zobraziť alebo skryť graf alebo simuláciu,začiarknite alebo zrušte začiarknutie políčka ckeckbox');
 define('GRAPH', 'Graf');
-define('SIMULATION','Simulacia');
+define('SIMULATION','Simulácia');
 define('POSITION','Pozícia loptičky');
 define('SEND', 'Odoslať');
 define('ALERT', 'Zadaný vstup nie je platný, vstup musi byť 0-0.95');
-define('TITLE1','Inverzne kyvadlo');
-define('TITLE2','Gulicka na tyci');
-define('TITLE3','Tlmic kolesa');
+define('TITLE1','Inverzné kyvadlo');
+define('TITLE2','Gulicka na týči');
+define('TITLE3','Tlmič kolesa');
 define('SUSP1','Graf označuje v čase meniacu sa pozíciu kolesa pri nabiehaní na rôzne prekážky.');
 define('CHOOSE','Vybrať');
 define('CLOSE','Zavrieť');
 define('DOCUMENTATION','Dokumentácia API');
 define('CAS_DOC','CAS API Dokumentácia');
 define('DESC_API','Popis API');
+define('PREKAZKA',' Výška prekážky');
 
 
 //index.php
@@ -34,10 +35,10 @@ define('DESCRIPTION_SUSPENSION','Úlohou zavesenia automobilu je maximalizovať 
 define('SHOW', 'Zobraziť Viac');
 
 //vypocet.php
-define('COUNT','Vypocet');
-define('FORMULAR', 'Formular na vypocet');
+define('COUNT','Výpočet');
+define('FORMULAR', 'Formulár na výpočet');
 define('INPUT', 'Vstup');
-define('OUTPUT','Vystup');
+define('OUTPUT','Výstup');
 
 
 //welcome.php
@@ -53,12 +54,12 @@ define('ERROR2','Nezadali ste API kluc. Prosim Vas zadajte API kluc');
 define('TITLE5','Popis API');
 //work.php
 
-define('WORK','Praca');
-define('TITLE4','Praca');
-define('BILING','Dvojjazycnost');
+define('WORK','Práca');
+define('TITLE4','Práca');
+define('BILING','Dvojjazyčnosť');
 define('API','API ku naistalovanemu CAS');
-define('API_KEY','API kluc');
-define('INDIVIDUAL','Individualna praca');
+define('API_KEY','API kľúč');
+define('INDIVIDUAL','Individuálna práca');
 define('LOGGING','Logovanie');
 define('DESC_API','Popis Api');
 define('STATISTICS','Štatistika');
@@ -66,6 +67,7 @@ define('MATHEMATICS','Matematika');
 
 define('DRAGANA','V týchto grafoch môžete sledovať zmenu polohy obráteného kyvadla. Modrá čiara označuje zmenu polohy v priebehu času a oranžová čiara zmenu uhla.Údaje som spracovala pomocou Octave. Hodnoty v grafe, ako aj polohu a uhol je možné meniť výberom čísla v rozsahu 0 - 1, počas ktorého bude graf nakreslený s novými hodnotami a animácia sa nastartuje týmito hodnotami.');
 define('ZELKO','Môj projekt bol Ball Beam. Prvý graf ukazuje v čase meniacu sa pozíciu guličky a druhy graf ukazuje uhol naklonenia tyče v závislosti od času. Animacia ako sama, zavisi ako od parametrov ziskanich z Octave, tak aj zadanych parametrov od uzivatela. Ked uzivatel zada parameter v rozsahu 0-1, tak sa animacia rozbehne, a hodnoty na grafe sa tiez zmenia na zaklade novych udajov.');
+define('VLADO','V tomto prípade nám animácia tlmiča kolies ukazuje polohu kolies pri stretnutí s prekážkou. Ak zadáte parametre od 0 do 1, graf aj simulácia zobrazujú hodnoty zmeny polohy kolesa.');
 //stats.php
 
 define('EMAIL', 'Ak chcete získať štatistiku, zadajte svoj e-mail.');
@@ -76,19 +78,8 @@ define('TABLE','Táto tabuľka zobrazuje počet návštev / použití uvedených
 //api-docs.php
 
 define('VYPOCET','Vracia výpočet');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
-define('','');
+define('POZIADVYP','Vracia výsledok požiadaného výpočtu');
+define('RET_ARR','Vracia polia s polohámi častí pre animácii simulácii');
+
 
 ?>
